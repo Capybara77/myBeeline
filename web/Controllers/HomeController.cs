@@ -28,7 +28,7 @@ public class HomeController : Controller
     {
         DataDb.Feedbacks.Add(feedback);
         DataDb.SaveChanges();
-        return LocalRedirect("/index.html");
+        return LocalRedirect("/data");
     }
 
     [Route("/data")]

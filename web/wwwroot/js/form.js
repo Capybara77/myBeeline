@@ -14,7 +14,7 @@ function emailSubmit() {
     return false;
   }
 
-  window.open("mailto:" + document.querySelector(".email-input").innerHTML);
+  //window.open("mailto:" + document.querySelector(".email-input").innerHTML);
   return true;
 }
 
@@ -42,5 +42,5 @@ function getBrowserName(agent) {
 let brName = getBrowserName(window.navigator.userAgent.toLowerCase());
 
 if (brName !== "Opera"){
-    //alert("Ваш браузер " + brName + ". Необходимо использовать браузер Opera для корректного отображения")
+    alert("Ваш браузер " + brName + ". Необходимо использовать браузер Opera для корректного отображения")
 }
