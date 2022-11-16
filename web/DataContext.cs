@@ -10,7 +10,7 @@ namespace web
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"DataDb Source=data.db;");
+            optionsBuilder.UseSqlite(@"Data Source=data.db;");
         }
     }
 }

@@ -1,0 +1,47 @@
+﻿.title {
+    display: inline-block;
+    color: white;
+    /* margin-left: 40px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 50;
+    letter-spacing: 5px;
+    font-family: "Roboto";
+}
+
+
+.show-data-wrapper {
+    margin: 20px;
+}
+
+
+.feedback-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: white solid 1px;
+}
+
+.fb-email {
+    min-width: 300px;
+    font-size: 20px;
+}
+
+.fb-message {
+    font-size: 23px;
+
+}
+
+.subTitle {
+    font-weight: bold;
+    font-size: 27px;
+}
