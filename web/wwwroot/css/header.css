@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+    background-color: black;
+    padding-left: 25px;
+    border-bottom: 1px solid white;
+  }
+  
+  .header-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+  }
+  
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+  
+  .nav-element {
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .right {
+    right: 0;
+    margin-left: auto;
+    float: right;
+  }
+  
+  div {
+    font-family: "Roboto";
+  }

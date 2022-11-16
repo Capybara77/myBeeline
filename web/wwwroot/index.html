@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeeLine</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/mailLayout.css" />
+    <link rel="stylesheet" href="css/data.css"/>
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="nav-bar">
+                <a href="index.html" class="link-header">
+                    <div class="nav-element" href="/">Главная</div>
+                </a>
+                <a href="products.html" class="link-header">
+                    <div class="nav-element" href="products.html">Товары</div>
+                </a>
+                <a href="contacts.html" class="link-header">
+                    <div class="nav-element">Контакты</div>
+                </a>
+                <a href="work.html" class="link-header">
+                    <div class="nav-element">Сотрудничество</div>
+                </a>
+                <a href="history.html" class="link-header">
+                    <div class="nav-element">История фирмы</div>
+                </a>
+                <a href="about.html" class="link-header">
+                    <div class="nav-element">О нас</div>
+                </a>
+                <a href="price.html" class="link-header">
+                    <div class="nav-element">Прайс</div>
+                </a>
+                <a href="empl.html" class="link-header">
+                    <div class="nav-element">Сотрудники</div>
+                </a>
+
+                <a href="login.html" class="right">
+                    <div class="nav-element right">Войти в личный кабинет</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="welcome-page">
+            <img src="photo/mainProduct.jpg" alt="main" class="img-main" />
+            <div class="main-test-wrapper">
+                <h1 class="product-title">BeeLine</h1>
+                <h2 class="some-text-after-title">Живи на яркой стороне</h2>
+            </div>
+        </div>
+        <div class="block-name-wrapper">
+            <p class="block-name">Описание деятельности</p>
+        </div>
+        <div class="desc-info">
+            <p class="info-text">
+                Под маркой «билайн» оказываются услуги сотовой (GSM, UMTS и LTE) и
+                фиксированной связи, проводного (FTTB) и беспроводного (Wi-Fi, «билайн
+                WiFi») высокоскоростного доступа в Интернет, IP-телевидения («Домашнее
+                цифровое телевидение билайн» и «Мобильное ТВ»). <br />
+                В августе 2019 года компания запустила сервис на основе искусственного
+                интеллекта «BeelineAI-Поиск», который поможет оперативнее находить
+                пропавших людей. Сервис разработан специально для поддержки поисковых
+                задач «Лиза Алерт»[3]. Предоставление безвозмездного доступа в
+                интернет для социальных сайтов.
+            </p>
+            <img src="photo/2logo.png" alt="logo" class="logo" />
+        </div>
+
+        <div class="block-name-wrapper">
+            <p class="block-name">О сайте</p>
+        </div>
+        <div class="block-name-wrapper desc-info-block">
+            <p class="info-text">
+                Создатель - Суетин Андрей Алексеевич.
+                <br />
+                АИС-19-2
+            </p>
+        </div>
+
+        <div class="block-name-wrapper">
+            <p class="block-name">Форма обратной связи</p>
+            <form onsubmit="return emailSubmit()" action="/home/form" method="post" class="email-form">
+                <span class="input-text">Email</span>
+                <input placeholder="От 4 символов" type="email" class="input email-input" name="email">
+                <span class="input-text">Сообщение</span>
+                <textarea name="message" class="message-input" placeholder="От 10 символов" cols="50" rows="5"></textarea>
+                <div class="not-robot">
+                    <input type="checkbox" class="not-robot-check">
+                    <span class="text">Я не робот</span>
+                </div>
+                <input type="submit" class="but">
+            </form>
+            <form action="/data" method="get" class="show-data-wrapper">
+                <input value="Посмотреть данные обратной связи" type="submit" class="show-data-btn" />
+            </form>
+        </div>
+    </main>
+    <script src="js/form.js"></script>
+</body>
+</html>
