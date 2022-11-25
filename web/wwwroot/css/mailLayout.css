@@ -311,3 +311,10 @@ textarea {
     font-size: 18px;
     line-height: 1.2;
 }
+
+.buy-text-title {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 25px;
+}
