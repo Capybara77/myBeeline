@@ -1,0 +1,76 @@
+﻿@{
+    Layout = null;
+}
+@model string
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeLine</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/products2.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/data.css"/>
+    <link rel="stylesheet" href="/css/mailLayout.css" />
+</head>
+<body>
+<header>
+    <div class="header-wrapper">
+        <div class="nav-bar">
+            <a href="/index.html" class="link-header">
+                <div class="nav-element" href="/">Главная</div>
+            </a>
+            <a href="/products.html" class="link-header">
+                <div class="nav-element" href="products.html">Товары</div>
+            </a>
+            <a href="/contacts.html" class="link-header">
+                <div class="nav-element">Контакты</div>
+            </a>
+            <a href="/work.html" class="link-header">
+                <div class="nav-element">Сотрудничество</div>
+            </a>
+            <a href="/history.html" class="link-header">
+                <div class="nav-element">История фирмы</div>
+            </a>
+            <a href="/about.html" class="link-header">
+                <div class="nav-element">О нас</div>
+            </a>
+            <a href="/price.html" class="link-header">
+                <div class="nav-element">Прайс</div>
+            </a>
+            <a href="/empl.html" class="link-header">
+                <div class="nav-element">Сотрудники</div>
+            </a>
+
+            <a href="/login.html" class="right">
+                <div class="nav-element right">Войти в личный кабинет</div>
+            </a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="block-name-wrapper">
+        <p class="block-name">Покупка товара</p>
+    </div>
+
+
+    <div class="buy-block">
+        <p class="buy-text-title">Наименование товара: @Model</p>
+        <form action="/home/submitBuy" method="post" class="email-form">
+            <p class="input-text">ФИО покупателя</p>
+            <input type="text" name="name" class="input" />
+
+            <p class="input-text">Email</p>
+            <input type="email" name="email" class="input"/>
+
+            <input hidden name="pname" value="@Model"/>
+            <input class="but" type="submit" value="Оформить покупку"/>
+        </form>
+    </div>
+</main>
+</body>
+</html>
