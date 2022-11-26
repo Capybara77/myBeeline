@@ -172,3 +172,11 @@ main {
     font-size: 0.9rem;
   }
 }
+
+
+.price-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}

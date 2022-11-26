@@ -39,9 +39,6 @@
             <a href="/about.html" class="link-header">
                 <div class="nav-element">О нас</div>
             </a>
-            <a href="/price.html" class="link-header">
-                <div class="nav-element">Прайс</div>
-            </a>
             <a href="/empl.html" class="link-header">
                 <div class="nav-element">Сотрудники</div>
             </a>
@@ -60,6 +57,8 @@
 
     <div class="buy-block">
         <p class="buy-text-title">Наименование товара: @Model</p>
+        <p class="buy-text-title">Введите свое фио и email, на него придет подтверждение покупки.</p>
+
         <form action="/home/submitBuy" method="post" class="email-form">
             <p class="input-text">ФИО покупателя</p>
             <input type="text" name="name" class="input" />
